@@ -19,9 +19,26 @@
 //   });
 
 
-  document.getElementById("addbooks").onclick('button');
+  // document.getElementById("addbooks").onclick('button');
 
-  const ul = document.createElement('ul'); 
-  ul.innerText = 'Hello new book'; 
-  document.body.append();
+  // const ul = document.createElement('ul'); 
+  // ul.innerText = 'Hello new book'; 
+  // document.body.append();
+
+const button = document.getElementById('button');
  
+button.addEventListener("click", listbooks);
+
+function listbooks() {
+
+  const author = document.querySelector("#author").value;
+  const node = document.createElement("li");
+  const textnode = document.createTextNode(author);
+  node.appendChild(textnode);
+  document.querySelector('#addbooks').appendChild(node);
+
+
+  const book = document.querySelector("#book").value;
+  const textnode2 = document.createTextNode(book);
+  node.appendChild(textnode2);
+  document.querySelector('#addbooks').appendChild(node);}
