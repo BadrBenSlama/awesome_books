@@ -1,0 +1,46 @@
+
+h1 {
+    font-size: 38px;
+}
+
+.first-text {
+    line-height: 0;
+    border-bottom: 1px solid black;
+    width: 400px;
+}
+
+.first-text p {
+    font-size: 17px;
+}
+
+.first-text button {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.second-text {
+    line-height: 0;
+    border-bottom: 1px solid black;
+    width: 400px;
+}
+
+.second-text p {
+    font-size: 17px;
+}
+
+.second-text button {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form button {
+    width: 45px;
+}
