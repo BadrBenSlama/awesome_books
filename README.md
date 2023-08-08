@@ -1,34 +1,79 @@
-# awesome_books
+# :tw-1f4dc: Table of Contents
 
+- About the Project
+ -         Built With
+ -             Tech Stack
+ -            Key Features
+ -           rocket Live Demo
+-     Getting Started
+ -         Setup
+ -         Prerequisites
+ -         Install
+ -         Usage
+ -         Run tests
+ -         Deployment
+-      Authors
+-     Future Features
+-     Contributing
+-     Show your support
+-     Acknowledgements
+-      License
 
-## About project
+##Awesome
 
 "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
-## Tech stack
+##Built with
+### Tech Stack
 
-![html5](./icons/html5.png)  
-![css3](./icons/css3.png)  
-![JavaScript](./icons/js.jpeg)
+- Client
+ - HTML5
+ - CSS3
+ - JavaScript
+- Server
+ - N/A
+- Database
+ - N/A
 
-## Installation
+### Key Features
 
-For a live demo just open this link - [Awesome book](https://badrbenslama.github.io/awesome_books/)
+1. book store
+2. add and remove books
+3. display all books
 
-## Authors
+##Getting Started
+To get a local copy up and running, follow these steps.
 
-Evans 
-Github ==> [evansnyamekye](https://github.com/evansnyamekye)
+###Prerequisites
+In order to run this project you need:
 
-&
+- A basic knowledge of HTML, CSS & GitHub
 
-Ben
-Github ==> [BadrBenSlama](https://github.com/BadrBenSlama)
+###Setup
+Clone this repository to your desired folder:
 
-## Show your support
-Star the project if you like it
+Example commands:
+```bash
+  cd [to your desired folder]
+  git clone
+```
 
-## License
+###Install
+Install this project with:
 
-Standard MIT license
-[MIT_LICENSE](./LICENSE)
+Open `index.html` file
+
+##Authors 
+
+[Evans](https://github.com/evansnyamekye "Evans") & [Ben](https://github.com/BadrBenSlama "Ben")
+
+##Contribution
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/BadrBenSlama/awesome_books/issues "issues page").
+
+##Show your support 
+If you liked the project you can star it :tw-2b50:
+
+##License
+This project is [MIT](https://github.com/BadrBenSlama/awesome_books/blob/add_remove_functionality/LICENSE "MIT") licensed.
+
