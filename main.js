@@ -11,7 +11,5 @@ document.addEventListener("DOMContentLoaded", function() {
       
       outputDiv.innerHTML = message;
 
-      document.querySelector('#title').value = ''; 
-      document.querySelector('#author').value = ''; 
     });
-  });
+});
