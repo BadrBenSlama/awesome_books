@@ -89,12 +89,9 @@ After you're finished please remove all the comments and instructions!
 - **add and remove books**
 - **display all books**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Live demo <a name="live-demo"></a>
 
-
-
-
-
+https://badrbenslama.github.io/awesome_books/
 
 <!-- GETTING STARTED -->
 
@@ -141,23 +138,18 @@ To run the project, execute the following command:
 ### Run tests
 
 - No tests here
-### Deployment
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using:
 
 - Non deployable
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 
-
-- Evans: [](evansnyamekye) & Ben: [](BadrBenSlama)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Evans](https://github.com/evansnyamekye) & [Ben](https://github.com/BadrBenSlama)
 
 <!-- FUTURE FEATURES -->
 
@@ -167,25 +159,19 @@ You can deploy this project using:
 - [ ] **Deploy live**
 - [ ] **Add some functionality**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Sami-Ullah-Tufail/Awesome-books/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Feel free to check the [issues page](https://github.com/BadrBenSlama/awesome_books/issues).
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project give it a star ⭐
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -194,16 +180,12 @@ If you like this project give it a star ⭐
 I would like to thank
 - Microverse
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- FAQ (optional) -->
-
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
