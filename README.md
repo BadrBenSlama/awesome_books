@@ -8,9 +8,9 @@
 ## Tech stack
 
 <picture>
-  <img media="(prefers-color-scheme: light)" src="./icons/html5.jpeg">
-  <img media="(prefers-color-scheme: light)" src="./icons/css3.jpeg">
-  <img media="(prefers-color-scheme: light)" src="./icons/js.jpeg">
+  <img media="(prefers-color-scheme: dark)" src="./icons/html5.png">
+  <img media="(prefers-color-scheme: dark)" src="./icons/css3.png">
+  <img media="(prefers-color-scheme: dark)" src="./icons/js.jpeg">
 </picture>
 
 
