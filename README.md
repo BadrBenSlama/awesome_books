@@ -6,12 +6,10 @@
 "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
 ## Tech stack
-![html5](./icons/html5.png)  
-![css3](./icons/css3.png)  
-![JavaScript](./icons/js.jpeg)
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./icons/html5.png">
-  <source media="(prefers-color-scheme: light)" srcset="./icons/css3.png">
+  <img media="(prefers-color-scheme: light)" src="./icons/html5.jpeg">
+  <img media="(prefers-color-scheme: light)" src="./icons/css3.jpeg">
   <img media="(prefers-color-scheme: light)" src="./icons/js.jpeg">
 </picture>
 
