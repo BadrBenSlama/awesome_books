@@ -1,23 +1,20 @@
-# :tw-1f4dc: Table of Contents
+#Table of Contents
 
 - About the Project
- -         Built With
- -             Tech Stack
- -            Key Features
- -           rocket Live Demo
--     Getting Started
- -         Setup
- -         Prerequisites
- -         Install
- -         Usage
- -         Run tests
- -         Deployment
--      Authors
--     Future Features
--     Contributing
--     Show your support
--     Acknowledgements
--      License
+ - Built With
+ - Tech Stack
+ - Key Features
+ - rocket Live Demo
+- Getting Started
+ - Setup
+ - Prerequisites
+ - Install
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
 ##Awesome
 
