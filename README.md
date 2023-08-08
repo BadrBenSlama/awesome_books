@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./icons/html5.png">
   <source media="(prefers-color-scheme: light)" srcset="./icons/css3.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="./icons/js.jpeg">
+  <img media="(prefers-color-scheme: light)" src="./icons/js.jpeg">
 </picture>
 
 
