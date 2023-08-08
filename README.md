@@ -8,21 +8,27 @@
 ## Tech stack
 ![html5](./icons/html5.png)  
 ![css3](./icons/css3.png)  
-![JavaScript](/icons/js.jpeg)
+![JavaScript](./icons/js.jpeg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./icons/html5.png">
+  <source media="(prefers-color-scheme: light)" srcset="./icons/css3.png">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="./icons/js.jpeg">
+</picture>
+
 
 ## Installation
 
-For a live demo just open this link - [Awesome book](<(https://badrbenslama.github.io/awesome_books/>)
+For a live demo just open this link - [Awesome book](https://badrbenslama.github.io/awesome_books/)
 
 ## Authors
 
 Evans 
-Github ==> [evansnyamekye](<(https://github.com/evansnyamekye>)
+Github ==> [evansnyamekye](https://github.com/evansnyamekye)
 
 &
 
 Ben
-Github ==> [BadrBenSlama](<(https://github.com/BadrBenSlama>)
+Github ==> [BadrBenSlama](https://github.com/BadrBenSlama)
 
 ## Show your support
 Star the project if you like it
