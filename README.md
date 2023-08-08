@@ -7,12 +7,9 @@
 
 ## Tech stack
 
-<picture>
-  <img media="(prefers-color-scheme: dark)" src="./icons/html5.png">
-  <img media="(prefers-color-scheme: dark)" src="./icons/css3.png">
-  <img media="(prefers-color-scheme: dark)" src="./icons/js.jpeg">
-</picture>
-
+![html5](./icons/html5.png)  
+![css3](./icons/css3.png)  
+![JavaScript](./icons/js.jpeg)
 
 ## Installation
 
