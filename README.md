@@ -1,7 +1,7 @@
 #Table of Contents
 
 - About the Project
- - Built With
+ -- Built With
  - Tech Stack
  - Key Features
  - rocket Live Demo
