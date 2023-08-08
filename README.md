@@ -8,7 +8,13 @@
 ## Tech stack
 ![html5](./icons/html5.png)  
 ![css3](./icons/css3.png)  
-![JavaScript](/icons/js.jpeg)
+![JavaScript](./icons/js.jpeg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./icons/html5.png">
+  <source media="(prefers-color-scheme: light)" srcset="./icons/css3.png">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="./icons/js.jpeg">
+</picture>
+
 
 ## Installation
 
