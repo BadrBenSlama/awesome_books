@@ -12,17 +12,17 @@
 
 ## Installation
 
-For a live demo just open this link - [Awesome book](<(https://badrbenslama.github.io/awesome_books/>)
+For a live demo just open this link - [Awesome book](https://badrbenslama.github.io/awesome_books/)
 
 ## Authors
 
 Evans 
-Github ==> [evansnyamekye](<(https://github.com/evansnyamekye>)
+Github ==> [evansnyamekye](https://github.com/evansnyamekye)
 
 &
 
 Ben
-Github ==> [BadrBenSlama](<(https://github.com/BadrBenSlama>)
+Github ==> [BadrBenSlama](https://github.com/BadrBenSlama)
 
 ## Show your support
 Star the project if you like it
