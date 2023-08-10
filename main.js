@@ -1,66 +1,70 @@
-// JavaScript code to manipulate the DOM
-document.addEventListener('DOMContentLoaded', () => {
-  // Create variables
-  const bookTitleEntry = document.getElementById('bookTitle');
-  const bookAuthorEntry = document.getElementById('bookAuthor');
-  const submitBtn = document.getElementById('submitBtn');
-  const addBooks = document.getElementById('addBooks');
+// Create class for booklist
+class BookList {
+  constructor() {
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
+    this.bookListElement = document.getElementById('bookList');
+    this.bookTileEntry = document.getElementById('bookTitle');
+    this.bookAuthorEntry = document.getElementById('bookAuthor');
+    this.submitBtn = document.getElementById('submitBtn');
 
-  // Create variables and localstorage JSON Initialization
-  const storedBooks = localStorage.getItem('books');
-  const books = storedBooks ? JSON.parse(storedBooks) : [];
-
-  function saveBooksToLocalStorage() {
-    localStorage.setItem('books', JSON.stringify(books));
+    // Add an event listner to submit button
+    this.submitBtn.addEventListener('click', () => {
+      this.addBook();
+      this.renderBooks();
+      this.bookTitleEntry.value = '';
+      this.bookAuthorEntry.value = '';
+    });
+    this.renderBooks();
   }
 
-  function renderBooks() {
-    addBooks.innerHTML = '';
-    books.forEach((book, index) => {
+  // create variables within addbook function
+  // Declared trim method to remove whitespace
+  addBook() {
+    const title = this.bookTileEntry.value.trim();
+    const author = this.bookAuthorEntry.value.trim();
+    if (title !== '' && author !== '') {
+      const book = { title, author };
+      this.books.push(book);
+      this.saveBooks();
+    }
+  }
+
+  removeBook(index) {
+    this.books.splice(index, 1);
+    this.saveBooks();
+  }
+
+  saveBooks() {
+    localStorage.setItem('books', JSON.stringify(this.books));
+  }
+
+  renderBooks() {
+    this.bookListElement.innerHTML = '';
+    this.books.forEach((book, index) => {
       const li = document.createElement('li');
-
-      const titleElement = document.createElement('p');
-      titleElement.textContent = `${book.title}`;
-
-      const authorElement = document.createElement('p');
-      authorElement.textContent = `${book.author}`;
+      li.textContent = `${book.title} writen by ${book.author}`;
 
       // Create const variable and functionalities for remove
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.style.marginTop = '5px';
+      removeButton.classList.add('remove-button');
       // eslint-disable-next-line no-use-before-define
-      removeButton.addEventListener('click', () => deleteBook(index));
+      removeButton.addEventListener('click', () => {
+        this.removeBook(index);
+        this.renderBooks();
+      });
 
-      li.appendChild(titleElement);
-      li.appendChild(authorElement);
+      // Append User Interface for li remove
       li.appendChild(removeButton);
-
-      addBooks.appendChild(li);
+      this.bookListElement.appendChild(li);
     });
   }
+}
 
-  function deleteBook(index) {
-    books.splice(index, 1);
-    saveBooksToLocalStorage();
-    renderBooks();
-  }
+function renderBooksOnLoad() {
+  const bookList = new BookList();
+  bookList.renderBooks();
+}
 
-  // eventLister functoinalities to add book item
-  function addBook() {
-    const title = bookTitleEntry.value;
-    const author = bookAuthorEntry.value;
-    if (title.trim() !== '' && author.trim() !== '') {
-      const book = { title, author };
-      books.push(book);
-
-      saveBooksToLocalStorage();
-      renderBooks();
-      bookTitleEntry.value = '';
-      bookAuthorEntry.value = '';
-    }
-  }
-
-  submitBtn.addEventListener('click', addBook);
-  renderBooks();
-});
+document.addEventListener('DOMContentLoaded', renderBooksOnLoad);
