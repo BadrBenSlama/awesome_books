@@ -57,19 +57,18 @@ class AwesomeBookAppllication {
       const bookDiv = document.createElement('div');
       bookDiv.classList.add('book');
       bookDiv.textContent = `${book.title} written by ${book.author}`;
-
       // Create const variable and functionalities for remove
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.style.backgroundColor = '#800000';
       removeButton.style.marginTop = '5px';
+      removeButton.style.marginLeft = '100px';
       removeButton.classList.add('remove-button');
       // eslint-disable-next-line no-use-before-define
       removeButton.addEventListener('click', () => {
         this.removeBook(index);
         this.renderBooks();
       });
-
       // Append User Interface for li remove
       bookDiv.appendChild(removeButton);
       this.bookShelves.appendChild(bookDiv);
