@@ -54,7 +54,6 @@ class AwesomeBookAppllication {
   renderBooks() {
     this.bookShelves.innerHTML = '';
     this.books.forEach((book, index) => {
-
       const bookDiv = document.createElement('div');
       bookDiv.classList.add('book');
       bookDiv.textContent = `${book.title} written by ${book.author}`;
@@ -70,13 +69,11 @@ class AwesomeBookAppllication {
         this.removeBook(index);
         this.renderBooks();
       });
-
       // Append User Interface for li remove
       bookDiv.appendChild(removeButton);
       this.bookShelves.appendChild(bookDiv);
     }); 
   }
-
   // eslint-disable-next-line class-methods-use-this
   showSection(sectionId) {
     const sections = ['homePage', 'listSection', 'addSection', 'contactSection'];
