@@ -47,13 +47,6 @@ div {
   margin-bottom: 15px;
 }
 
-/* ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-*/
-
 .bookShelves {
   display: flex;
   flex-direction: column;
@@ -195,4 +188,8 @@ footer .container {
   justify-content: start;
   align-items: center;
   height: 100%;
+}
+
+#time_tag {
+  margin-right: 75%;
 }
