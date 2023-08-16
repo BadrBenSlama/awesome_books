@@ -1,14 +1,10 @@
-import AwesomeBookAppllication from "./modules/class.js";
-import WhatsTheDate from "./modules/date.js";
+import AwesomeBookAppllication from './modules/class.js';
+import WhatsTheDate from './modules/date.js';
 
+function initializeApp() {
+  // eslint-disable-next-line no-unused-vars
+  const app = new AwesomeBookAppllication();
+  WhatsTheDate();
+}
 
-  function initializeApp() {
-    // eslint-disable-next-line no-unused-vars
-    const app = new AwesomeBookAppllication();
-    WhatsTheDate();    
-  }
-  
-  document.addEventListener('DOMContentLoaded', initializeApp);
-  
-  
-  
+document.addEventListener('DOMContentLoaded', initializeApp);

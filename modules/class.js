@@ -1,26 +1,26 @@
 class AwesomeBookAppllication {
-    constructor() {
-      this.books = JSON.parse(localStorage.getItem('books')) || [];
-      this.bookShelves = document.getElementById('bookShelves');
-      this.titleEntry = document.getElementById('title');
-      this.authorEntry = document.getElementById('author');
-      this.submitBtn = document.getElementById('submitBtn');
-  
-      // Add an event listner to submit button
-      this.submitBtn.addEventListener('click', this.handleOnClickAddBook.bind(this));
-  
-      const listLink = document.getElementById('list');
-      const addNewLink = document.getElementById('addNew');
-      const contactLink = document.getElementById('contact');
-  
-      listLink.addEventListener('click', () => this.showSection('listSection'));
-      addNewLink.addEventListener('click', () => this.showSection('addSection'));
-      contactLink.addEventListener('click', () => this.showSection('contactSection'));
-  
-      this.showSection('listSection');
-      this.renderBooks();
-    }
-  
+  constructor() {
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
+    this.bookShelves = document.getElementById('bookShelves');
+    this.titleEntry = document.getElementById('title');
+    this.authorEntry = document.getElementById('author');
+    this.submitBtn = document.getElementById('submitBtn');
+
+    // Add an event listner to submit button
+    this.submitBtn.addEventListener('click', this.handleOnClickAddBook.bind(this));
+
+    const listLink = document.getElementById('list');
+    const addNewLink = document.getElementById('addNew');
+    const contactLink = document.getElementById('contact');
+
+    listLink.addEventListener('click', () => this.showSection('listSection'));
+    addNewLink.addEventListener('click', () => this.showSection('addSection'));
+    contactLink.addEventListener('click', () => this.showSection('contactSection'));
+
+    this.showSection('listSection');
+    this.renderBooks();
+  }
+
     handleOnClickAddBook = (event) => {
       event.preventDefault();
       this.addBook();
@@ -28,7 +28,7 @@ class AwesomeBookAppllication {
       this.titleEntry.value = '';
       this.authorEntry.value = '';
     }
-  
+
     // create variables within addbook function
     // Declared trim method to remove whitespace
     addBook() {
@@ -40,16 +40,16 @@ class AwesomeBookAppllication {
         this.saveBooks();
       }
     }
-  
+
     removeBook(index) {
       this.books.splice(index, 1);
       this.saveBooks();
     }
-  
+
     saveBooks() {
       localStorage.setItem('books', JSON.stringify(this.books));
     }
-  
+
     renderBooks() {
       this.bookShelves.innerHTML = '';
       this.books.forEach((book, index) => {
@@ -73,11 +73,11 @@ class AwesomeBookAppllication {
         this.bookShelves.appendChild(bookDiv);
       });
     }
-  
+
     // eslint-disable-next-line class-methods-use-this
     showSection(sectionId) {
       const sections = ['homePage', 'listSection', 'addSection', 'contactSection'];
-  
+
       sections.forEach((id) => {
         const section = document.getElementById(id);
         if (id === sectionId) {
@@ -87,7 +87,6 @@ class AwesomeBookAppllication {
         }
       });
     }
-  
-  }
+}
 
-  export default AwesomeBookAppllication;
+export default AwesomeBookAppllication;

@@ -5,7 +5,7 @@ const WhatsTheDate = () => {
   const time = document.getElementById('time_tag');
   time.textContent = newDateTime;
   setTimeout(() => {
-    showTime();
+    WhatsTheDate();
   }, 500);
 };
 
