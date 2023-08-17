@@ -165,7 +165,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BadrBenSlama/awesome_books/issues).
+Feel free to check the [issues page](https://github.com/Goldinium/awesome_books/issues).
 
 <!-- SUPPORT -->
 
